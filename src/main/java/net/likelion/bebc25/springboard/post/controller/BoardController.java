@@ -3,6 +3,7 @@ package net.likelion.bebc25.springboard.post.controller;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
@@ -51,6 +52,7 @@ public class BoardController {
     this.fileStore = fileStore;
   }
 
+
   /**
    * 게시글 목록 및 검색, 페이징 조회 요청을 처리합니다.
    *
@@ -61,12 +63,27 @@ public class BoardController {
    * @param model 뷰(HTML)에 전달할 데이터 상자 객체
    * @return 게시글 목록 뷰 템플릿 경로 (board/list.html)
    */
+
+  /**
+   * Nginx 프록시로부터 전달받은 클라이언트 원본 IP 및 헤더 정보 로그 출력
+   */
+  private void logProxyHeaders(HttpServletRequest request) {
+    String realIp = request.getHeader("X-Real-IP");
+    String forwardedFor = request.getHeader("X-Forwarded-For");
+    String host = request.getHeader("Host");
+
+    log.info("[Nginx Proxy Header] X-Real-IP: {}, X-Forwarded-For: {}, Host: {}, RemoteAddr: {}",
+            realIp, forwardedFor, host, request.getRemoteAddr());
+  }
+
   @GetMapping("/list")
-  public String getBoardList(@RequestParam(value = "page", defaultValue = "1") int page,
+  public String getBoardList(HttpServletRequest request,
+                             @RequestParam(value = "page", defaultValue = "1") int page,
                              @RequestParam(value = "size", defaultValue = "5") int size,
                              @RequestParam(value = "type", required = false) String type,
                              @RequestParam(value = "keyword", required = false) String keyword,
                              Model model){
+    logProxyHeaders(request);
     PageDto<PostDto> pageResponse = postService.searchPosts(type, keyword, page, size);
     model.addAttribute("pageResponse", pageResponse);
     model.addAttribute("posts", pageResponse.getContent());

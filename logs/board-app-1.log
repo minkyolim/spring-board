@@ -1,0 +1,59 @@
+2026-08-25T02:19:32.965Z  INFO 1 --- [spring-board] [main] n.l.b.s.SpringBoardApplication           : Starting SpringBoardApplication v1.0.0 using Java 25.0.4 with PID 1 (/app/spring-board.jar started by root in /app)
+2026-08-25T02:19:32.969Z DEBUG 1 --- [spring-board] [main] n.l.b.s.SpringBoardApplication           : Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-08-25T02:19:32.970Z  INFO 1 --- [spring-board] [main] n.l.b.s.SpringBoardApplication           : The following 1 profile is active: "secret"
+2026-08-25T02:19:33.793Z  INFO 1 --- [spring-board] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2026-08-25T02:19:33.818Z  INFO 1 --- [spring-board] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 JDBC repository interfaces.
+2026-08-25T02:19:34.339Z  INFO 1 --- [spring-board] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-25T02:19:34.365Z  INFO 1 --- [spring-board] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-25T02:19:34.366Z  INFO 1 --- [spring-board] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-25T02:19:34.393Z  INFO 1 --- [spring-board] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1349 ms
+2026-08-25T02:19:35.036Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - configuration:
+2026-08-25T02:19:35.040Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2026-08-25T02:19:35.041Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
+2026-08-25T02:19:35.041Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : catalog.........................none
+2026-08-25T02:19:35.042Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............none
+2026-08-25T02:19:35.042Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : connectionTestQuery.............none
+2026-08-25T02:19:35.044Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............30000
+2026-08-25T02:19:35.045Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : credentials.....................com.zaxxer.hikari.util.Credentials@5382184b
+2026-08-25T02:19:35.045Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : credentialsProvider.............none
+2026-08-25T02:19:35.046Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : credentialsProviderClassName....none
+2026-08-25T02:19:35.046Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : dataSource......................none
+2026-08-25T02:19:35.047Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............none
+2026-08-25T02:19:35.048Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................none
+2026-08-25T02:19:35.049Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
+2026-08-25T02:19:35.050Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : driverClassName................."com.mysql.cj.jdbc.Driver"
+2026-08-25T02:19:35.051Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : exceptionOverride...............none
+2026-08-25T02:19:35.052Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName......none
+2026-08-25T02:19:35.053Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2026-08-25T02:19:35.053Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............none
+2026-08-25T02:19:35.054Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................600000
+2026-08-25T02:19:35.054Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout.......1
+2026-08-25T02:19:35.055Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2026-08-25T02:19:35.055Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : jdbcUrl.........................jdbc:mysql://board-db:3306/board_db?useSSL=false&allowPublicKeyRetrieval=true
+2026-08-25T02:19:35.056Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : keepaliveTime...................120000
+2026-08-25T02:19:35.056Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2026-08-25T02:19:35.056Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2026-08-25T02:19:35.057Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................2
+2026-08-25T02:19:35.057Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : metricRegistry..................none
+2026-08-25T02:19:35.058Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........none
+2026-08-25T02:19:35.058Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................2
+2026-08-25T02:19:35.059Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : password........................<masked>
+2026-08-25T02:19:35.059Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : poolName........................"HikariPool-1"
+2026-08-25T02:19:35.060Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2026-08-25T02:19:35.060Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2026-08-25T02:19:35.061Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : scheduledExecutor...............none
+2026-08-25T02:19:35.061Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : schema..........................none
+2026-08-25T02:19:35.062Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : threadFactory...................internal
+2026-08-25T02:19:35.062Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : transactionIsolation............default
+2026-08-25T02:19:35.062Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : username........................"board-app"
+2026-08-25T02:19:35.063Z DEBUG 1 --- [spring-board] [main] com.zaxxer.hikari.HikariConfig           : validationTimeout...............5000
+2026-08-25T02:19:35.063Z  INFO 1 --- [spring-board] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-25T02:19:35.291Z  INFO 1 --- [spring-board] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8c0a23f
+2026-08-25T02:19:35.294Z  INFO 1 --- [spring-board] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-25T02:19:35.494Z  INFO 1 --- [spring-board] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-08-25T02:19:35.512Z  INFO 1 --- [spring-board] [main] n.l.b.s.SpringBoardApplication           : Started SpringBoardApplication in 3.168 seconds (process running for 4.082)
+2026-08-25T02:24:52.401Z  INFO 1 --- [spring-board] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-25T02:24:52.403Z  INFO 1 --- [spring-board] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-25T02:24:52.408Z  INFO 1 --- [spring-board] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-08-25T02:25:21.600Z  INFO 1 --- [spring-board] [http-nio-8080-exec-3] n.l.b.s.post.controller.BoardController  : [Nginx Proxy Header] X-Real-IP: 172.18.0.1, X-Forwarded-For: 172.18.0.1, Host: localhost, RemoteAddr: 172.18.0.5
+2026-08-25T04:02:05.158Z  INFO 1 --- [spring-board] [http-nio-8080-exec-10] n.l.b.s.post.controller.BoardController  : [Nginx Proxy Header] X-Real-IP: 172.18.0.1, X-Forwarded-For: 172.18.0.1, Host: localhost, RemoteAddr: 172.18.0.5
